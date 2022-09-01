@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="Editar Dados"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:gravity="end"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-32dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNomeAlt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:layout_marginTop="23dp"
+                android:id="@+id/txtPifeAlt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pife: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:layout_marginTop="23dp"
+                android:id="@+id/txtBancoAlt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banco: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:layout_marginTop="23dp"
+                android:id="@+id/txtUnoAlt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uno: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtEditarNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Entre com o nome do Jogador" />
+
+
+            <EditText
+                android:id="@+id/txtEditarPife"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:hint="Pontos no Pife"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/txtEditarBanco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:hint="Pontos no Banco Imobiliário"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/txtEditarUno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:hint="Pontos no Uno"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btnAlterarDados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alterar" />
+    </RelativeLayout>
+
+</RelativeLayout>
